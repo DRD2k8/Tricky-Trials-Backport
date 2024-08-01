@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "trickytrials:polished_tuff"
+  },
+  "result": "trickytrials:chiseled_tuff_bricks"
+}

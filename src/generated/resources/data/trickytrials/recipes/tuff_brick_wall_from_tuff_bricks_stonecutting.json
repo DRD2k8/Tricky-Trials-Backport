@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "trickytrials:tuff_bricks"
+  },
+  "result": "trickytrials:tuff_brick_wall"
+}

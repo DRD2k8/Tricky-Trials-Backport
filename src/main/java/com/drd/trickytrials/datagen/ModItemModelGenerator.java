@@ -6,9 +6,11 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModItemModelGenerator extends ItemModelProvider {
@@ -42,6 +44,17 @@ public class ModItemModelGenerator extends ItemModelProvider {
         waxedBlockItem(ModBlocks.WAXED_EXPOSED_COPPER_BULB, ModBlocks.EXPOSED_COPPER_BULB);
         waxedBlockItem(ModBlocks.WAXED_WEATHERED_COPPER_BULB, ModBlocks.WEATHERED_COPPER_BULB);
         waxedBlockItem(ModBlocks.WAXED_OXIDIZED_COPPER_BULB, ModBlocks.OXIDIZED_COPPER_BULB);
+        simpleBlockItem(ModBlocks.TUFF_STAIRS);
+        simpleBlockItem(ModBlocks.TUFF_SLAB);
+        vanillaWallItem(ModBlocks.TUFF_WALL, Blocks.TUFF);
+        simpleBlockItem(ModBlocks.CHISELED_TUFF);
+        simpleBlockItem(ModBlocks.POLISHED_TUFF_STAIRS);
+        simpleBlockItem(ModBlocks.POLISHED_TUFF_SLAB);
+        wallItem(ModBlocks.POLISHED_TUFF_WALL, ModBlocks.POLISHED_TUFF);
+        simpleBlockItem(ModBlocks.TUFF_BRICK_STAIRS);
+        simpleBlockItem(ModBlocks.TUFF_BRICK_SLAB);
+        wallItem(ModBlocks.TUFF_BRICK_WALL, ModBlocks.TUFF_BRICKS);
+        simpleBlockItem(ModBlocks.CHISELED_TUFF_BRICKS);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
@@ -69,5 +82,15 @@ public class ModItemModelGenerator extends ItemModelProvider {
     private ItemModelBuilder waxedBlockItem(RegistryObject<Block> waxedItem, RegistryObject<Block> unwaxedItem) {
         return withExistingParent(waxedItem.getId().getPath(),
                 new ResourceLocation(TrickyTrials.MOD_ID, "item/" + unwaxedItem.getId().getPath()));
+    }
+
+    public void wallItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/wall_inventory"))
+                .texture("wall",  new ResourceLocation(TrickyTrials.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
+    }
+
+    public void vanillaWallItem(RegistryObject<Block> block, Block baseBlock) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/wall_inventory"))
+                .texture("wall",  new ResourceLocation("block/" + ForgeRegistries.BLOCKS.getKey(baseBlock).getPath()));
     }
 }

@@ -39,6 +39,19 @@
     "trickytrials:waxed_copper_bulb",
     "trickytrials:waxed_exposed_copper_bulb",
     "trickytrials:waxed_weathered_copper_bulb",
-    "trickytrials:waxed_oxidized_copper_bulb"
+    "trickytrials:waxed_oxidized_copper_bulb",
+    "trickytrials:tuff_stairs",
+    "trickytrials:tuff_slab",
+    "trickytrials:tuff_wall",
+    "trickytrials:chiseled_tuff",
+    "trickytrials:polished_tuff",
+    "trickytrials:polished_tuff_stairs",
+    "trickytrials:polished_tuff_slab",
+    "trickytrials:polished_tuff_wall",
+    "trickytrials:tuff_bricks",
+    "trickytrials:tuff_brick_stairs",
+    "trickytrials:tuff_brick_slab",
+    "trickytrials:tuff_brick_wall",
+    "trickytrials:chiseled_tuff_bricks"
   ]
 }

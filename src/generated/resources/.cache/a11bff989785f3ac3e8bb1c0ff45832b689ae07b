@@ -1,3 +1,6 @@
-// 1.20.1	2024-08-01T11:38:41.3742404	Tags for minecraft:item mod id trickytrials
+// 1.20.1	2024-08-01T16:21:43.2244988	Tags for minecraft:item mod id trickytrials
 b97064d3da4de4546c4d2d5f41e355d9fe9b50a0 data/minecraft/tags/items/doors.json
+5cf60170c920a08c68ec4461841042845d30ca6b data/minecraft/tags/items/slabs.json
+36d6109370516ec115ea55bc0a545905f17c9708 data/minecraft/tags/items/stairs.json
 9f2b662a6f38714f32140426948b679be6e6c04d data/minecraft/tags/items/trapdoors.json
+d9efbf092ee8d48751a0d9279caec183e49a2c81 data/minecraft/tags/items/walls.json

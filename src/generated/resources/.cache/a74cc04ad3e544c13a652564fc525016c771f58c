@@ -1,4 +1,6 @@
-// 1.20.1	2024-08-01T15:01:52.4369161	Item Models: trickytrials
+// 1.20.1	2024-08-01T16:52:09.7846567	Item Models: trickytrials
+1b46c94c14aa6c5764befacf2db3e82867bbb71e assets/trickytrials/models/item/chiseled_tuff.json
+27b3202e1dde1caf3652152df3055952d3514021 assets/trickytrials/models/item/chiseled_tuff_bricks.json
 dcdda826d77b2cba65e2d2f6885d3504ce18f0cf assets/trickytrials/models/item/copper_bulb.json
 33756133690718d667c80a6b4ba9043630e8e801 assets/trickytrials/models/item/copper_door.json
 3f3f4ac7299e575c24bfe5a8416339499c2b87c1 assets/trickytrials/models/item/copper_trapdoor.json
@@ -8,6 +10,15 @@ d62994bad6700f59a1052f3dcd50ca26ac4a9fcf assets/trickytrials/models/item/exposed
 6822b91202e96ab0a468760c977874e8693d8da5 assets/trickytrials/models/item/oxidized_copper_bulb.json
 f032782c5c75e6d984a0a8cc74268be2a827e411 assets/trickytrials/models/item/oxidized_copper_door.json
 2d306c50e69975888400cc09c8721e79eb1645be assets/trickytrials/models/item/oxidized_copper_trapdoor.json
+06195be89aa92c5fc743cf0fbc68818853972378 assets/trickytrials/models/item/polished_tuff_slab.json
+78a6d40a6e4def9e204be254fd7244272d8d2275 assets/trickytrials/models/item/polished_tuff_stairs.json
+a1c4975c68c5a3e30e188b73674f2e4da34139f0 assets/trickytrials/models/item/polished_tuff_wall.json
+2224230459b2959653a2c4f3732be3c902316263 assets/trickytrials/models/item/tuff_brick_slab.json
+2fa62b549267c815141a7ef8d1e22219d9c0b9bd assets/trickytrials/models/item/tuff_brick_stairs.json
+d022e5b5f8c1fb56303749ad8dc4bb9a51494419 assets/trickytrials/models/item/tuff_brick_wall.json
+af7dc225d8202abe54665c4e6b1ce24be3e36c70 assets/trickytrials/models/item/tuff_slab.json
+695e4090f26cbd8818a8cd4ca0e0d94be4010759 assets/trickytrials/models/item/tuff_stairs.json
+bd26eef867eab96333c2be73c023cf6a91b30252 assets/trickytrials/models/item/tuff_wall.json
 af5406e5df5f2b07078800df59324684c78b1010 assets/trickytrials/models/item/waxed_copper_bulb.json
 6544455159229085645d92901c5f45e7f7cad8a7 assets/trickytrials/models/item/waxed_copper_door.json
 96b7803b09bc5fae4d252e9d112ce239bef1ce28 assets/trickytrials/models/item/waxed_copper_trapdoor.json

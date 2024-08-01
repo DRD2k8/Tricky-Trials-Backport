@@ -122,6 +122,20 @@ public class TrickyTrials {
                 addAfter(entries, Items.WAXED_OXIDIZED_CUT_COPPER_SLAB, ModBlocks.WAXED_OXIDIZED_COPPER_DOOR.get());
                 addAfter(entries, ModBlocks.WAXED_OXIDIZED_COPPER_DOOR.get(), ModBlocks.WAXED_OXIDIZED_COPPER_TRAPDOOR.get());
                 addAfter(entries, ModBlocks.WAXED_OXIDIZED_COPPER_TRAPDOOR.get(), ModBlocks.WAXED_OXIDIZED_COPPER_BULB.get());
+                addAfter(entries, Items.REINFORCED_DEEPSLATE, Items.TUFF);
+                addAfter(entries, Items.TUFF, ModBlocks.TUFF_STAIRS.get());
+                addAfter(entries, ModBlocks.TUFF_STAIRS.get(), ModBlocks.TUFF_SLAB.get());
+                addAfter(entries, ModBlocks.TUFF_SLAB.get(), ModBlocks.TUFF_WALL.get());
+                addAfter(entries, ModBlocks.TUFF_WALL.get(), ModBlocks.CHISELED_TUFF.get());
+                addAfter(entries, ModBlocks.CHISELED_TUFF.get(), ModBlocks.POLISHED_TUFF.get());
+                addAfter(entries, ModBlocks.POLISHED_TUFF.get(), ModBlocks.POLISHED_TUFF_STAIRS.get());
+                addAfter(entries, ModBlocks.POLISHED_TUFF_STAIRS.get(), ModBlocks.POLISHED_TUFF_SLAB.get());
+                addAfter(entries, ModBlocks.POLISHED_TUFF_SLAB.get(), ModBlocks.POLISHED_TUFF_WALL.get());
+                addAfter(entries, ModBlocks.POLISHED_TUFF_WALL.get(), ModBlocks.TUFF_BRICKS.get());
+                addAfter(entries, ModBlocks.TUFF_BRICKS.get(), ModBlocks.TUFF_BRICK_STAIRS.get());
+                addAfter(entries, ModBlocks.TUFF_BRICK_STAIRS.get(), ModBlocks.TUFF_BRICK_SLAB.get());
+                addAfter(entries, ModBlocks.TUFF_BRICK_SLAB.get(), ModBlocks.TUFF_BRICK_WALL.get());
+                addAfter(entries, ModBlocks.TUFF_BRICK_WALL.get(), ModBlocks.CHISELED_TUFF_BRICKS.get());
             }
         }
     }

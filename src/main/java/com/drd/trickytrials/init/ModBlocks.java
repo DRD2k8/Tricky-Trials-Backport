@@ -108,6 +108,32 @@ public class ModBlocks {
             () -> new CopperBulbBlock(BlockBehaviour.Properties.copy(WEATHERED_COPPER_BULB.get())));
     public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_BULB = registerBlock("waxed_oxidized_copper_bulb",
             () -> new CopperBulbBlock(BlockBehaviour.Properties.copy(OXIDIZED_COPPER_BULB.get())));
+    public static final RegistryObject<Block> TUFF_STAIRS = registerBlock("tuff_stairs",
+            () -> new StairBlock(Blocks.TUFF.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.TUFF)));
+    public static final RegistryObject<Block> TUFF_SLAB = registerBlock("tuff_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.TUFF)));
+    public static final RegistryObject<Block> TUFF_WALL = registerBlock("tuff_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.TUFF).forceSolidOn()));
+    public static final RegistryObject<Block> CHISELED_TUFF = registerBlock("chiseled_tuff",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TUFF)));
+    public static final RegistryObject<Block> POLISHED_TUFF = registerBlock("polished_tuff",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TUFF)));
+    public static final RegistryObject<Block> POLISHED_TUFF_STAIRS = registerBlock("polished_tuff_stairs",
+            () -> new StairBlock(POLISHED_TUFF.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.TUFF)));
+    public static final RegistryObject<Block> POLISHED_TUFF_SLAB = registerBlock("polished_tuff_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.TUFF)));
+    public static final RegistryObject<Block> POLISHED_TUFF_WALL = registerBlock("polished_tuff_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.TUFF).forceSolidOn()));
+    public static final RegistryObject<Block> TUFF_BRICKS = registerBlock("tuff_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TUFF)));
+    public static final RegistryObject<Block> TUFF_BRICK_STAIRS = registerBlock("tuff_brick_stairs",
+            () -> new StairBlock(TUFF_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.TUFF)));
+    public static final RegistryObject<Block> TUFF_BRICK_SLAB = registerBlock("tuff_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.TUFF)));
+    public static final RegistryObject<Block> TUFF_BRICK_WALL = registerBlock("tuff_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.TUFF).forceSolidOn()));
+    public static final RegistryObject<Block> CHISELED_TUFF_BRICKS = registerBlock("chiseled_tuff_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TUFF)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

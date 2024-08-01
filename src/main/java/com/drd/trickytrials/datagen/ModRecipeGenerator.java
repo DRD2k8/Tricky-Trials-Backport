@@ -279,6 +279,115 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
         waxingFromHoneycomb(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WAXED_EXPOSED_COPPER_BULB.get(), ModBlocks.EXPOSED_COPPER_BULB.get(), consumer);
         waxingFromHoneycomb(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WAXED_WEATHERED_COPPER_BULB.get(), ModBlocks.WEATHERED_COPPER_BULB.get(), consumer);
         waxingFromHoneycomb(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WAXED_OXIDIZED_COPPER_BULB.get(), ModBlocks.OXIDIZED_COPPER_BULB.get(), consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TUFF_STAIRS.get(), 4)
+                .pattern("#  ")
+                .pattern("## ")
+                .pattern("###")
+                .define('#', Items.TUFF)
+                .unlockedBy(getHasName(Items.TUFF), has(Items.TUFF))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TUFF_SLAB.get(), 6)
+                .pattern("###")
+                .define('#', Items.TUFF)
+                .unlockedBy(getHasName(Items.TUFF), has(Items.TUFF))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TUFF_WALL.get(), 6)
+                .pattern("###")
+                .pattern("###")
+                .define('#', Items.TUFF)
+                .unlockedBy(getHasName(Items.TUFF), has(Items.TUFF))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_TUFF.get())
+                .pattern("#")
+                .pattern("#")
+                .define('#', ModBlocks.TUFF_SLAB.get())
+                .unlockedBy(getHasName(ModBlocks.TUFF_SLAB.get()), has(ModBlocks.TUFF_SLAB.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_TUFF.get(), 4)
+                .pattern("##")
+                .pattern("##")
+                .define('#', Items.TUFF)
+                .unlockedBy(getHasName(Items.TUFF), has(Items.TUFF))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_TUFF_STAIRS.get(), 4)
+                .pattern("#  ")
+                .pattern("## ")
+                .pattern("###")
+                .define('#', ModBlocks.POLISHED_TUFF.get())
+                .unlockedBy(getHasName(ModBlocks.POLISHED_TUFF.get()), has(ModBlocks.POLISHED_TUFF.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_TUFF_SLAB.get(), 6)
+                .pattern("###")
+                .define('#', ModBlocks.POLISHED_TUFF.get())
+                .unlockedBy(getHasName(ModBlocks.POLISHED_TUFF.get()), has(ModBlocks.POLISHED_TUFF.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_TUFF_WALL.get(), 6)
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModBlocks.POLISHED_TUFF.get())
+                .unlockedBy(getHasName(ModBlocks.POLISHED_TUFF.get()), has(ModBlocks.POLISHED_TUFF.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TUFF_BRICKS.get(), 4)
+                .pattern("##")
+                .pattern("##")
+                .define('#', ModBlocks.POLISHED_TUFF.get())
+                .unlockedBy(getHasName(ModBlocks.POLISHED_TUFF.get()), has(ModBlocks.POLISHED_TUFF.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TUFF_BRICK_STAIRS.get(), 4)
+                .pattern("#  ")
+                .pattern("## ")
+                .pattern("###")
+                .define('#', ModBlocks.TUFF_BRICKS.get())
+                .unlockedBy(getHasName(ModBlocks.TUFF_BRICKS.get()), has(ModBlocks.TUFF_BRICKS.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TUFF_BRICK_SLAB.get(), 6)
+                .pattern("###")
+                .define('#', ModBlocks.TUFF_BRICKS.get())
+                .unlockedBy(getHasName(ModBlocks.TUFF_BRICKS.get()), has(ModBlocks.TUFF_BRICKS.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TUFF_BRICK_WALL.get(), 6)
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModBlocks.TUFF_BRICKS.get())
+                .unlockedBy(getHasName(ModBlocks.TUFF_BRICKS.get()), has(ModBlocks.TUFF_BRICKS.get()))
+                .save(consumer);
+
+        stonecutting(consumer, RecipeCategory.BUILDING_BLOCKS, Items.TUFF, ModBlocks.TUFF_STAIRS.get(), 1);
+        stonecutting(consumer, RecipeCategory.BUILDING_BLOCKS, Items.TUFF, ModBlocks.TUFF_SLAB.get(), 2);
+        stonecutting(consumer, RecipeCategory.BUILDING_BLOCKS, Items.TUFF, ModBlocks.TUFF_WALL.get(), 1);
+        stonecutting(consumer, RecipeCategory.BUILDING_BLOCKS, Items.TUFF, ModBlocks.CHISELED_TUFF.get(), 1);
+        stonecutting(consumer, RecipeCategory.BUILDING_BLOCKS, Items.TUFF, ModBlocks.POLISHED_TUFF.get(), 1);
+        stonecutting(consumer, RecipeCategory.BUILDING_BLOCKS, Items.TUFF, ModBlocks.POLISHED_TUFF_STAIRS.get(), 1);
+        stonecutting(consumer, RecipeCategory.BUILDING_BLOCKS, Items.TUFF, ModBlocks.POLISHED_TUFF_SLAB.get(), 2);
+        stonecutting(consumer, RecipeCategory.BUILDING_BLOCKS, Items.TUFF, ModBlocks.POLISHED_TUFF_WALL.get(), 1);
+        stonecutting(consumer, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_TUFF.get(), ModBlocks.POLISHED_TUFF_STAIRS.get(), 1);
+        stonecutting(consumer, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_TUFF.get(), ModBlocks.POLISHED_TUFF_SLAB.get(), 2);
+        stonecutting(consumer, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_TUFF.get(), ModBlocks.POLISHED_TUFF_WALL.get(), 1);
+        stonecutting(consumer, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_TUFF.get(), ModBlocks.TUFF_BRICKS.get(), 1);
+        stonecutting(consumer, RecipeCategory.BUILDING_BLOCKS, Items.TUFF, ModBlocks.TUFF_BRICK_STAIRS.get(), 1);
+        stonecutting(consumer, RecipeCategory.BUILDING_BLOCKS, Items.TUFF, ModBlocks.TUFF_BRICK_SLAB.get(), 2);
+        stonecutting(consumer, RecipeCategory.BUILDING_BLOCKS, Items.TUFF, ModBlocks.TUFF_BRICK_WALL.get(), 1);
+        stonecutting(consumer, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_TUFF.get(), ModBlocks.TUFF_BRICK_STAIRS.get(), 1);
+        stonecutting(consumer, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_TUFF.get(), ModBlocks.TUFF_BRICK_SLAB.get(), 2);
+        stonecutting(consumer, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_TUFF.get(), ModBlocks.TUFF_BRICK_WALL.get(), 1);
+        stonecutting(consumer, RecipeCategory.BUILDING_BLOCKS, ModBlocks.TUFF_BRICKS.get(), ModBlocks.TUFF_BRICK_STAIRS.get(), 1);
+        stonecutting(consumer, RecipeCategory.BUILDING_BLOCKS, ModBlocks.TUFF_BRICKS.get(), ModBlocks.TUFF_BRICK_SLAB.get(), 2);
+        stonecutting(consumer, RecipeCategory.BUILDING_BLOCKS, ModBlocks.TUFF_BRICKS.get(), ModBlocks.TUFF_BRICK_WALL.get(), 1);
+        stonecutting(consumer, RecipeCategory.BUILDING_BLOCKS, Items.TUFF, ModBlocks.CHISELED_TUFF_BRICKS.get(), 1);
+        stonecutting(consumer, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_TUFF.get(), ModBlocks.CHISELED_TUFF_BRICKS.get(), 1);
+        stonecutting(consumer, RecipeCategory.BUILDING_BLOCKS, ModBlocks.TUFF_BRICKS.get(), ModBlocks.CHISELED_TUFF_BRICKS.get(), 1);
     }
 
     protected static void stonecutting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, RecipeCategory category, ItemLike ingredient, ItemLike result, int count) {

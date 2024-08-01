@@ -38,6 +38,21 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.WAXED_WEATHERED_COPPER_TRAPDOOR.get())
                 .add(ModBlocks.WAXED_OXIDIZED_COPPER_TRAPDOOR.get());
 
+        this.tag(BlockTags.STAIRS)
+                .add(ModBlocks.TUFF_STAIRS.get())
+                .add(ModBlocks.POLISHED_TUFF_STAIRS.get())
+                .add(ModBlocks.TUFF_BRICK_STAIRS.get());
+
+        this.tag(BlockTags.SLABS)
+                .add(ModBlocks.TUFF_SLAB.get())
+                .add(ModBlocks.POLISHED_TUFF_SLAB.get())
+                .add(ModBlocks.TUFF_BRICK_SLAB.get());
+
+        this.tag(BlockTags.WALLS)
+                .add(ModBlocks.TUFF_WALL.get())
+                .add(ModBlocks.POLISHED_TUFF_WALL.get())
+                .add(ModBlocks.TUFF_BRICK_WALL.get());
+
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.CHISELED_COPPER.get())
                 .add(ModBlocks.EXPOSED_CHISELED_COPPER.get())
@@ -78,6 +93,19 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.WAXED_COPPER_BULB.get())
                 .add(ModBlocks.WAXED_EXPOSED_COPPER_BULB.get())
                 .add(ModBlocks.WAXED_WEATHERED_COPPER_BULB.get())
-                .add(ModBlocks.WAXED_OXIDIZED_COPPER_BULB.get());
+                .add(ModBlocks.WAXED_OXIDIZED_COPPER_BULB.get())
+                .add(ModBlocks.TUFF_STAIRS.get())
+                .add(ModBlocks.TUFF_SLAB.get())
+                .add(ModBlocks.TUFF_WALL.get())
+                .add(ModBlocks.CHISELED_TUFF.get())
+                .add(ModBlocks.POLISHED_TUFF.get())
+                .add(ModBlocks.POLISHED_TUFF_STAIRS.get())
+                .add(ModBlocks.POLISHED_TUFF_SLAB.get())
+                .add(ModBlocks.POLISHED_TUFF_WALL.get())
+                .add(ModBlocks.TUFF_BRICKS.get())
+                .add(ModBlocks.TUFF_BRICK_STAIRS.get())
+                .add(ModBlocks.TUFF_BRICK_SLAB.get())
+                .add(ModBlocks.TUFF_BRICK_WALL.get())
+                .add(ModBlocks.CHISELED_TUFF_BRICKS.get());
     }
 }

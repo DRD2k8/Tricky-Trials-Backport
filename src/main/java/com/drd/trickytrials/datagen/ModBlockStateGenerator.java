@@ -3,9 +3,7 @@ package com.drd.trickytrials.datagen;
 import com.drd.trickytrials.TrickyTrials;
 import com.drd.trickytrials.init.ModBlocks;
 import net.minecraft.data.PackOutput;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DoorBlock;
-import net.minecraft.world.level.block.TrapDoorBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
@@ -41,6 +39,17 @@ public class ModBlockStateGenerator extends BlockStateProvider {
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.EXPOSED_COPPER_TRAPDOOR.get()), modLoc("block/exposed_copper_trapdoor"), true, "cutout");
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.WEATHERED_COPPER_TRAPDOOR.get()), modLoc("block/weathered_copper_trapdoor"), true, "cutout");
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.OXIDIZED_COPPER_TRAPDOOR.get()), modLoc("block/oxidized_copper_trapdoor"), true, "cutout");
+        stairsBlock(((StairBlock) ModBlocks.TUFF_STAIRS.get()), blockTexture(Blocks.TUFF));
+        slabBlock(((SlabBlock) ModBlocks.TUFF_SLAB.get()), blockTexture(Blocks.TUFF), blockTexture(Blocks.TUFF));
+        wallBlock(((WallBlock) ModBlocks.TUFF_WALL.get()), blockTexture(Blocks.TUFF));
+        blockWithItem(ModBlocks.POLISHED_TUFF);
+        stairsBlock(((StairBlock) ModBlocks.POLISHED_TUFF_STAIRS.get()), blockTexture(ModBlocks.POLISHED_TUFF.get()));
+        slabBlock(((SlabBlock) ModBlocks.POLISHED_TUFF_SLAB.get()), blockTexture(ModBlocks.POLISHED_TUFF.get()), blockTexture(ModBlocks.POLISHED_TUFF.get()));
+        wallBlock(((WallBlock) ModBlocks.POLISHED_TUFF_WALL.get()), blockTexture(ModBlocks.POLISHED_TUFF.get()));
+        blockWithItem(ModBlocks.TUFF_BRICKS);
+        stairsBlock(((StairBlock) ModBlocks.TUFF_BRICK_STAIRS.get()), blockTexture(ModBlocks.TUFF_BRICKS.get()));
+        slabBlock(((SlabBlock) ModBlocks.TUFF_BRICK_SLAB.get()), blockTexture(ModBlocks.TUFF_BRICKS.get()), blockTexture(ModBlocks.TUFF_BRICKS.get()));
+        wallBlock(((WallBlock) ModBlocks.TUFF_BRICK_WALL.get()), blockTexture(ModBlocks.TUFF_BRICKS.get()));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
