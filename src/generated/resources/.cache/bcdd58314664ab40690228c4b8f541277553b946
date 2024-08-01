@@ -1,0 +1,4 @@
+// 1.20.1	2024-08-01T15:01:52.4369161	Tags for minecraft:block mod id trickytrials
+b97064d3da4de4546c4d2d5f41e355d9fe9b50a0 data/minecraft/tags/blocks/doors.json
+365df8688b52ccb23cdc37dac7dd3eed99fdbe49 data/minecraft/tags/blocks/mineable/pickaxe.json
+9f2b662a6f38714f32140426948b679be6e6c04d data/minecraft/tags/blocks/trapdoors.json

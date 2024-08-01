@@ -1,11 +1,17 @@
 package com.drd.trickytrials;
 
+import com.drd.trickytrials.datagen.*;
+import com.drd.trickytrials.init.*;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -33,6 +39,10 @@ public class TrickyTrials {
     public TrickyTrials() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModBlocks.register(modEventBus);
+        ModItems.register(modEventBus);
+        ModSounds.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -53,6 +63,14 @@ public class TrickyTrials {
 
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.COPPER_GRATE.get(), RenderType.cutoutMipped());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.EXPOSED_COPPER_GRATE.get(), RenderType.cutoutMipped());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.WEATHERED_COPPER_GRATE.get(), RenderType.cutoutMipped());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.OXIDIZED_COPPER_GRATE.get(), RenderType.cutoutMipped());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.WAXED_COPPER_GRATE.get(), RenderType.cutoutMipped());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.WAXED_EXPOSED_COPPER_GRATE.get(), RenderType.cutoutMipped());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.WAXED_WEATHERED_COPPER_GRATE.get(), RenderType.cutoutMipped());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.WAXED_OXIDIZED_COPPER_GRATE.get(), RenderType.cutoutMipped());
         }
 
         private static void addAfter(MutableHashedLinkedMap<ItemStack, CreativeModeTab.TabVisibility> map, ItemLike after, ItemLike block) {
@@ -63,6 +81,48 @@ public class TrickyTrials {
         public static void buildCreativeModeTabContents(BuildCreativeModeTabContentsEvent event) {
             MutableHashedLinkedMap<ItemStack, CreativeModeTab.TabVisibility> entries = event.getEntries();
             ResourceKey<CreativeModeTab> tabKey = event.getTabKey();
+            if (tabKey.equals(CreativeModeTabs.BUILDING_BLOCKS)) {
+                addAfter(entries, Items.COPPER_BLOCK, ModBlocks.CHISELED_COPPER.get());
+                addAfter(entries, ModBlocks.CHISELED_COPPER.get(), ModBlocks.COPPER_GRATE.get());
+                addAfter(entries, Items.CUT_COPPER_SLAB, ModBlocks.COPPER_DOOR.get());
+                addAfter(entries, ModBlocks.COPPER_DOOR.get(), ModBlocks.COPPER_TRAPDOOR.get());
+                addAfter(entries, ModBlocks.COPPER_TRAPDOOR.get(), ModBlocks.COPPER_BULB.get());
+                addAfter(entries, Items.EXPOSED_COPPER, ModBlocks.EXPOSED_CHISELED_COPPER.get());
+                addAfter(entries, ModBlocks.EXPOSED_CHISELED_COPPER.get(), ModBlocks.EXPOSED_COPPER_GRATE.get());
+                addAfter(entries, Items.EXPOSED_CUT_COPPER_SLAB, ModBlocks.EXPOSED_COPPER_DOOR.get());
+                addAfter(entries, ModBlocks.EXPOSED_COPPER_DOOR.get(), ModBlocks.EXPOSED_COPPER_TRAPDOOR.get());
+                addAfter(entries, ModBlocks.EXPOSED_COPPER_TRAPDOOR.get(), ModBlocks.EXPOSED_COPPER_BULB.get());
+                addAfter(entries, Items.WEATHERED_COPPER, ModBlocks.WEATHERED_CHISELED_COPPER.get());
+                addAfter(entries, ModBlocks.WEATHERED_CHISELED_COPPER.get(), ModBlocks.WEATHERED_COPPER_GRATE.get());
+                addAfter(entries, Items.WEATHERED_CUT_COPPER_SLAB, ModBlocks.WEATHERED_COPPER_DOOR.get());
+                addAfter(entries, ModBlocks.WEATHERED_COPPER_DOOR.get(), ModBlocks.WEATHERED_COPPER_TRAPDOOR.get());
+                addAfter(entries, ModBlocks.WEATHERED_COPPER_TRAPDOOR.get(), ModBlocks.WEATHERED_COPPER_BULB.get());
+                addAfter(entries, Items.OXIDIZED_COPPER, ModBlocks.OXIDIZED_CHISELED_COPPER.get());
+                addAfter(entries, ModBlocks.OXIDIZED_CHISELED_COPPER.get(), ModBlocks.OXIDIZED_COPPER_GRATE.get());
+                addAfter(entries, Items.OXIDIZED_CUT_COPPER_SLAB, ModBlocks.OXIDIZED_COPPER_DOOR.get());
+                addAfter(entries, ModBlocks.OXIDIZED_COPPER_DOOR.get(), ModBlocks.OXIDIZED_COPPER_TRAPDOOR.get());
+                addAfter(entries, ModBlocks.OXIDIZED_COPPER_TRAPDOOR.get(), ModBlocks.OXIDIZED_COPPER_BULB.get());
+                addAfter(entries, Items.WAXED_COPPER_BLOCK, ModBlocks.WAXED_CHISELED_COPPER.get());
+                addAfter(entries, ModBlocks.WAXED_CHISELED_COPPER.get(), ModBlocks.WAXED_COPPER_GRATE.get());
+                addAfter(entries, Items.WAXED_CUT_COPPER_SLAB, ModBlocks.WAXED_COPPER_DOOR.get());
+                addAfter(entries, ModBlocks.WAXED_COPPER_DOOR.get(), ModBlocks.WAXED_COPPER_TRAPDOOR.get());
+                addAfter(entries, ModBlocks.WAXED_COPPER_TRAPDOOR.get(), ModBlocks.WAXED_COPPER_BULB.get());
+                addAfter(entries, Items.WAXED_EXPOSED_COPPER, ModBlocks.WAXED_EXPOSED_CHISELED_COPPER.get());
+                addAfter(entries, ModBlocks.WAXED_EXPOSED_CHISELED_COPPER.get(), ModBlocks.WAXED_EXPOSED_COPPER_GRATE.get());
+                addAfter(entries, Items.WAXED_EXPOSED_CUT_COPPER_SLAB, ModBlocks.WAXED_EXPOSED_COPPER_DOOR.get());
+                addAfter(entries, ModBlocks.WAXED_EXPOSED_COPPER_DOOR.get(), ModBlocks.WAXED_EXPOSED_COPPER_TRAPDOOR.get());
+                addAfter(entries, ModBlocks.WAXED_EXPOSED_COPPER_TRAPDOOR.get(), ModBlocks.WAXED_EXPOSED_COPPER_BULB.get());
+                addAfter(entries, Items.WAXED_WEATHERED_COPPER, ModBlocks.WAXED_WEATHERED_CHISELED_COPPER.get());
+                addAfter(entries, ModBlocks.WAXED_WEATHERED_CHISELED_COPPER.get(), ModBlocks.WAXED_WEATHERED_COPPER_GRATE.get());
+                addAfter(entries, Items.WAXED_WEATHERED_CUT_COPPER_SLAB, ModBlocks.WAXED_WEATHERED_COPPER_DOOR.get());
+                addAfter(entries, ModBlocks.WAXED_WEATHERED_COPPER_DOOR.get(), ModBlocks.WAXED_WEATHERED_COPPER_TRAPDOOR.get());
+                addAfter(entries, ModBlocks.WAXED_WEATHERED_COPPER_TRAPDOOR.get(), ModBlocks.WAXED_WEATHERED_COPPER_BULB.get());
+                addAfter(entries, Items.WAXED_OXIDIZED_COPPER, ModBlocks.WAXED_OXIDIZED_CHISELED_COPPER.get());
+                addAfter(entries, ModBlocks.WAXED_OXIDIZED_CHISELED_COPPER.get(), ModBlocks.WAXED_OXIDIZED_COPPER_GRATE.get());
+                addAfter(entries, Items.WAXED_OXIDIZED_CUT_COPPER_SLAB, ModBlocks.WAXED_OXIDIZED_COPPER_DOOR.get());
+                addAfter(entries, ModBlocks.WAXED_OXIDIZED_COPPER_DOOR.get(), ModBlocks.WAXED_OXIDIZED_COPPER_TRAPDOOR.get());
+                addAfter(entries, ModBlocks.WAXED_OXIDIZED_COPPER_TRAPDOOR.get(), ModBlocks.WAXED_OXIDIZED_COPPER_BULB.get());
+            }
         }
     }
 
@@ -74,6 +134,16 @@ public class TrickyTrials {
             PackOutput packOutput = generator.getPackOutput();
             ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
             CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
+
+            generator.addProvider(event.includeServer(), new ModRecipeGenerator(packOutput));
+            generator.addProvider(event.includeServer(), ModLootTableGenerator.create(packOutput));
+
+            generator.addProvider(event.includeClient(), new ModBlockStateGenerator(packOutput, existingFileHelper));
+            generator.addProvider(event.includeClient(), new ModItemModelGenerator(packOutput, existingFileHelper));
+
+            ModBlockTagGenerator blockTagGenerator = generator.addProvider(event.includeServer(),
+                    new ModBlockTagGenerator(packOutput, lookupProvider, existingFileHelper));
+            generator.addProvider(event.includeServer(), new ModItemTagGenerator(packOutput, lookupProvider, blockTagGenerator.contentsGetter(), existingFileHelper));
         }
     }
 }

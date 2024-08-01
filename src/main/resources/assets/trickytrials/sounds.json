@@ -1,0 +1,148 @@
+{
+  "block.trickytrials.copper_grate.break": {
+    "subtitle": "subtitles.block.generic.break",
+    "sounds": [
+      "trickytrials:block/copper_grate/break1",
+      "trickytrials:block/copper_grate/break2",
+      "trickytrials:block/copper_grate/break3",
+      "trickytrials:block/copper_grate/break4"
+    ]
+  },
+  "block.trickytrials.copper_grate.step": {
+    "subtitle": "subtitles.block.generic.footsteps",
+    "sounds": [
+      "trickytrials:block/copper_grate/step1",
+      "trickytrials:block/copper_grate/step2",
+      "trickytrials:block/copper_grate/step3",
+      "trickytrials:block/copper_grate/step4",
+      "trickytrials:block/copper_grate/step5",
+      "trickytrials:block/copper_grate/step6"
+    ]
+  },
+  "block.trickytrials.copper_grate.place": {
+    "subtitle": "subtitles.block.generic.place",
+    "sounds": [
+      "trickytrials:block/copper_grate/break1",
+      "trickytrials:block/copper_grate/break2",
+      "trickytrials:block/copper_grate/break3",
+      "trickytrials:block/copper_grate/break4"
+    ]
+  },
+  "block.trickytrials.copper_grate.hit": {
+    "subtitle": "subtitles.block.generic.hit",
+    "sounds": [
+      "trickytrials:block/copper_grate/step1",
+      "trickytrials:block/copper_grate/step2",
+      "trickytrials:block/copper_grate/step3",
+      "trickytrials:block/copper_grate/step4",
+      "trickytrials:block/copper_grate/step5",
+      "trickytrials:block/copper_grate/step6"
+    ]
+  },
+  "block.trickytrials.copper_grate.fall": {
+    "sounds": [
+      "trickytrials:block/copper_grate/step1",
+      "trickytrials:block/copper_grate/step2",
+      "trickytrials:block/copper_grate/step3",
+      "trickytrials:block/copper_grate/step4",
+      "trickytrials:block/copper_grate/step5",
+      "trickytrials:block/copper_grate/step6"
+    ]
+  },
+  "block.trickytrials.copper_door.open": {
+    "subtitles": "subtitles.block.door.toggle",
+    "sounds": [
+      "trickytrials:block/copper_door/toggle1",
+      "trickytrials:block/copper_door/toggle2",
+      "trickytrials:block/copper_door/toggle3"
+    ]
+  },
+  "block.trickytrials.copper_door.close": {
+    "subtitles": "subtitles.block.door.toggle",
+    "sounds": [
+      "trickytrials:block/copper_door/toggle1",
+      "trickytrials:block/copper_door/toggle2",
+      "trickytrials:block/copper_door/toggle3"
+    ]
+  },
+  "block.trickytrials.copper_trapdoor.open": {
+    "subtitles": "subtitles.block.trickytrials.copper_trapdoor.open",
+    "sounds": [
+      "trickytrials:block/copper_trapdoor/toggle1",
+      "trickytrials:block/copper_trapdoor/toggle2",
+      "trickytrials:block/copper_trapdoor/toggle3",
+      "trickytrials:block/copper_trapdoor/toggle4"
+    ]
+  },
+  "block.trickytrials.copper_trapdoor.close": {
+    "subtitles": "subtitles.block.trickytrials.copper_trapdoor.close",
+    "sounds": [
+      "trickytrials:block/copper_trapdoor/toggle1",
+      "trickytrials:block/copper_trapdoor/toggle2",
+      "trickytrials:block/copper_trapdoor/toggle3",
+      "trickytrials:block/copper_trapdoor/toggle4"
+    ]
+  },
+  "block.trickytrials.copper_bulb.break": {
+    "subtitle": "subtitles.block.generic.break",
+    "sounds": [
+      "trickytrials:block/copper_bulb/break1",
+      "trickytrials:block/copper_bulb/break2",
+      "trickytrials:block/copper_bulb/break3",
+      "trickytrials:block/copper_bulb/break4"
+    ]
+  },
+  "block.trickytrials.copper_bulb.step": {
+    "subtitle": "subtitles.block.generic.footsteps",
+    "sounds": [
+      "trickytrials:block/copper_bulb/step1",
+      "trickytrials:block/copper_bulb/step2",
+      "trickytrials:block/copper_bulb/step3",
+      "trickytrials:block/copper_bulb/step4",
+      "trickytrials:block/copper_bulb/step5",
+      "trickytrials:block/copper_bulb/step6"
+    ]
+  },
+  "block.trickytrials.copper_bulb.place": {
+    "subtitle": "subtitles.block.generic.place",
+    "sounds": [
+      "trickytrials:block/copper_bulb/place1",
+      "trickytrials:block/copper_bulb/place2",
+      "trickytrials:block/copper_bulb/place3",
+      "trickytrials:block/copper_bulb/place4"
+    ]
+  },
+  "block.trickytrials.copper_bulb.hit": {
+    "subtitle": "subtitles.block.generic.hit",
+    "sounds": [
+      "trickytrials:block/copper_bulb/step1",
+      "trickytrials:block/copper_bulb/step2",
+      "trickytrials:block/copper_bulb/step3",
+      "trickytrials:block/copper_bulb/step4",
+      "trickytrials:block/copper_bulb/step5",
+      "trickytrials:block/copper_bulb/step6"
+    ]
+  },
+  "block.trickytrials.copper_bulb.fall": {
+    "sounds": [
+      "trickytrials:block/copper_bulb/step1",
+      "trickytrials:block/copper_bulb/step2",
+      "trickytrials:block/copper_bulb/step3",
+      "trickytrials:block/copper_bulb/step4",
+      "trickytrials:block/copper_bulb/step5",
+      "trickytrials:block/copper_bulb/step6"
+    ]
+  },
+  "block.trickytrials.copper_bulb.turn_on": {
+    "subtitles": "subtitles.block.trickytrials.copper_bulb.turn_on",
+    "sounds": [
+      "trickytrials:block/copper_bulb/turn_on"
+    ]
+  },
+  "block.trickytrials.copper_bulb.turn_off": {
+    "subtitles": "subtitles.block.trickytrials.copper_bulb.turn_off",
+    "sounds": [
+      "trickytrials:block/copper_bulb/turn_off"
+    ]
+  }
+}
