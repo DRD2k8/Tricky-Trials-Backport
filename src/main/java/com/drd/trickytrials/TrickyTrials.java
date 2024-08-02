@@ -41,6 +41,7 @@ public class TrickyTrials {
 
         ModBlocks.register(modEventBus);
         ModItems.register(modEventBus);
+        ModPaintings.register(modEventBus);
         ModSounds.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
