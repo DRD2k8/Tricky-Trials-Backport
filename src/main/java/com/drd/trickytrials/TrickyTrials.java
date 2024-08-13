@@ -39,6 +39,7 @@ public class TrickyTrials {
     public TrickyTrials() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModBannerPatterns.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModItems.register(modEventBus);
         ModPaintings.register(modEventBus);
@@ -138,6 +139,10 @@ public class TrickyTrials {
                 addAfter(entries, ModBlocks.TUFF_BRICK_SLAB.get(), ModBlocks.TUFF_BRICK_WALL.get());
                 addAfter(entries, ModBlocks.TUFF_BRICK_WALL.get(), ModBlocks.CHISELED_TUFF_BRICKS.get());
             }
+            if (tabKey.equals(CreativeModeTabs.INGREDIENTS)) {
+                addAfter(entries, Items.PIGLIN_BANNER_PATTERN, ModItems.FLOW_BANNER_PATTERN.get());
+                addAfter(entries, ModItems.FLOW_BANNER_PATTERN.get(), ModItems.GUSTER_BANNER_PATTERN.get());
+            }
         }
     }
 
@@ -155,6 +160,7 @@ public class TrickyTrials {
 
             generator.addProvider(event.includeClient(), new ModBlockStateGenerator(packOutput, existingFileHelper));
             generator.addProvider(event.includeClient(), new ModItemModelGenerator(packOutput, existingFileHelper));
+            generator.addProvider(event.includeServer(), new ModBannerPatternTagGenerator(packOutput, lookupProvider, existingFileHelper));
 
             ModBlockTagGenerator blockTagGenerator = generator.addProvider(event.includeServer(),
                     new ModBlockTagGenerator(packOutput, lookupProvider, existingFileHelper));

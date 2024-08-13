@@ -1,4 +1,9 @@
 {
+  "item.trickytrials.flow_banner_pattern": "Banner Pattern",
+  "item.trickytrials.flow_banner_pattern.desc": "Flow",
+  "item.trickytrials.guster_banner_pattern": "Banner Pattern",
+  "item.trickytrials.guster_banner_pattern.desc": "Guster",
+
   "block.trickytrials.chiseled_copper": "Chiseled Copper",
   "block.trickytrials.exposed_chiseled_copper": "Exposed Chiseled Copper",
   "block.trickytrials.weathered_chiseled_copper": "Weathered Chiseled Copper",

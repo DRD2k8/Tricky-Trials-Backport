@@ -2,6 +2,7 @@ package com.drd.trickytrials.datagen;
 
 import com.drd.trickytrials.TrickyTrials;
 import com.drd.trickytrials.init.ModBlocks;
+import com.drd.trickytrials.init.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -55,6 +56,8 @@ public class ModItemModelGenerator extends ItemModelProvider {
         simpleBlockItem(ModBlocks.TUFF_BRICK_SLAB);
         wallItem(ModBlocks.TUFF_BRICK_WALL, ModBlocks.TUFF_BRICKS);
         simpleBlockItem(ModBlocks.CHISELED_TUFF_BRICKS);
+        simpleItem(ModItems.FLOW_BANNER_PATTERN);
+        simpleItem(ModItems.GUSTER_BANNER_PATTERN);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
