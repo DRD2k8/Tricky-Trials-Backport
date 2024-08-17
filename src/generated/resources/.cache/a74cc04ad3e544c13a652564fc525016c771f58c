@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-17T14:59:34.2471295	Item Models: trickytrials
+// 1.20.1	2024-08-17T15:57:00.0293197	Item Models: trickytrials
 f776f511dc10369dffdec5501e3d4dded5816ccd assets/trickytrials/models/item/bolt_armor_trim_smithing_template.json
 1b46c94c14aa6c5764befacf2db3e82867bbb71e assets/trickytrials/models/item/chiseled_tuff.json
 27b3202e1dde1caf3652152df3055952d3514021 assets/trickytrials/models/item/chiseled_tuff_bricks.json
@@ -13,6 +13,9 @@ d3ce9e472f1217e61ece08e2305a9d9de9abec21 assets/trickytrials/models/item/flow_ba
 a35e0a0b261bc8dcabb1177b99d4c52a3c9058bd assets/trickytrials/models/item/flow_pottery_sherd.json
 42d0c1861021f9e7778a0b97609869037208f65e assets/trickytrials/models/item/guster_banner_pattern.json
 6c91972c95a2839eb8df71c5ced1b6e997105f75 assets/trickytrials/models/item/guster_pottery_sherd.json
+2a2c1480fd80ff36c7fe0c299c2d6d0a3a2d77ed assets/trickytrials/models/item/music_disc_creator.json
+010bab4f93c135ed7783d3ba538e764ee8f641ce assets/trickytrials/models/item/music_disc_creator_music_box.json
+cdbac1f51733aca8260471da6d321c3240614e8d assets/trickytrials/models/item/music_disc_precipice.json
 6822b91202e96ab0a468760c977874e8693d8da5 assets/trickytrials/models/item/oxidized_copper_bulb.json
 f032782c5c75e6d984a0a8cc74268be2a827e411 assets/trickytrials/models/item/oxidized_copper_door.json
 2d306c50e69975888400cc09c8721e79eb1645be assets/trickytrials/models/item/oxidized_copper_trapdoor.json

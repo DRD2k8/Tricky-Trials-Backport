@@ -155,6 +155,11 @@ public class TrickyTrials {
                 addAfter(entries, Items.SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE, ModItems.FLOW_ARMOR_TRIM_SMITHING_TEMPLATE.get());
                 addAfter(entries, ModItems.FLOW_ARMOR_TRIM_SMITHING_TEMPLATE.get(), ModItems.BOLT_ARMOR_TRIM_SMITHING_TEMPLATE.get());
             }
+            if (tabKey.equals(CreativeModeTabs.TOOLS_AND_UTILITIES)) {
+                addAfter(entries, Items.MUSIC_DISC_11, ModItems.MUSIC_DISC_CREATOR_MUSIC_BOX.get());
+                addAfter(entries, Items.MUSIC_DISC_WAIT, ModItems.MUSIC_DISC_CREATOR.get());
+                addAfter(entries, ModItems.MUSIC_DISC_CREATOR.get(), ModItems.MUSIC_DISC_PRECIPICE.get());
+            }
         }
     }
 

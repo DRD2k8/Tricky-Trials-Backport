@@ -30,6 +30,10 @@ public class ModSounds {
     public static final RegistryObject<SoundEvent> COPPER_BULB_TURN_ON = registerSoundEvents("block.trickytrials.copper_bulb.turn_on");
     public static final RegistryObject<SoundEvent> COPPER_BULB_TURN_OFF = registerSoundEvents("block.trickytrials.copper_bulb.turn_off");
 
+    public static final RegistryObject<SoundEvent> MUSIC_DISC_CREATOR = registerSoundEvents("music_disc.trickytrials.creator");
+    public static final RegistryObject<SoundEvent> MUSIC_DISC_CREATOR_MUSIC_BOX = registerSoundEvents("music_disc.trickytrials.creator_music_box");
+    public static final RegistryObject<SoundEvent> MUSIC_DISC_PRECIPICE = registerSoundEvents("music_disc.trickytrials.precipice");
+
     private static RegistryObject<SoundEvent> registerSoundEvents(String name) {
         return SOUNDS.register(name, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(TrickyTrials.MOD_ID, name)));
     }

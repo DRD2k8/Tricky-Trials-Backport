@@ -50,7 +50,7 @@
     ]
   },
   "block.trickytrials.copper_door.open": {
-    "subtitles": "subtitles.block.door.toggle",
+    "subtitle": "subtitles.block.door.toggle",
     "sounds": [
       "trickytrials:block/copper_door/toggle1",
       "trickytrials:block/copper_door/toggle2",
@@ -58,7 +58,7 @@
     ]
   },
   "block.trickytrials.copper_door.close": {
-    "subtitles": "subtitles.block.door.toggle",
+    "subtitle": "subtitles.block.door.toggle",
     "sounds": [
       "trickytrials:block/copper_door/toggle1",
       "trickytrials:block/copper_door/toggle2",
@@ -66,7 +66,7 @@
     ]
   },
   "block.trickytrials.copper_trapdoor.open": {
-    "subtitles": "subtitles.block.trickytrials.copper_trapdoor.open",
+    "subtitle": "subtitles.block.trickytrials.copper_trapdoor.open",
     "sounds": [
       "trickytrials:block/copper_trapdoor/toggle1",
       "trickytrials:block/copper_trapdoor/toggle2",
@@ -75,7 +75,7 @@
     ]
   },
   "block.trickytrials.copper_trapdoor.close": {
-    "subtitles": "subtitles.block.trickytrials.copper_trapdoor.close",
+    "subtitle": "subtitles.block.trickytrials.copper_trapdoor.close",
     "sounds": [
       "trickytrials:block/copper_trapdoor/toggle1",
       "trickytrials:block/copper_trapdoor/toggle2",
@@ -134,15 +134,39 @@
     ]
   },
   "block.trickytrials.copper_bulb.turn_on": {
-    "subtitles": "subtitles.block.trickytrials.copper_bulb.turn_on",
+    "subtitle": "subtitles.block.trickytrials.copper_bulb.turn_on",
     "sounds": [
       "trickytrials:block/copper_bulb/turn_on"
     ]
   },
   "block.trickytrials.copper_bulb.turn_off": {
-    "subtitles": "subtitles.block.trickytrials.copper_bulb.turn_off",
+    "subtitle": "subtitles.block.trickytrials.copper_bulb.turn_off",
     "sounds": [
       "trickytrials:block/copper_bulb/turn_off"
+    ]
+  },
+  "music_disc.trickytrials.creator": {
+    "sounds": [
+      {
+        "name": "trickytrials:records/creator",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc.trickytrials.creator_music_box": {
+    "sounds": [
+      {
+        "name": "trickytrials:records/creator_music_box",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc.trickytrials.precipice": {
+    "sounds": [
+      {
+        "name": "trickytrials:records/precipice",
+        "stream": true
+      }
     ]
   }
 }

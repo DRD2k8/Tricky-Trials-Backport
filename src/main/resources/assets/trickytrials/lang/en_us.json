@@ -8,6 +8,12 @@
   "item.trickytrials.scrape_pottery_sherd": "Scrape Pottery Sherd",
   "item.trickytrials.flow_armor_trim_smithing_template": "Smithing Template",
   "item.trickytrials.bolt_armor_trim_smithing_template": "Smithing Template",
+  "item.trickytrials.music_disc_creator": "Music Disc",
+  "item.trickytrials.music_disc_creator.desc": "Lena Raine - Creator",
+  "item.trickytrials.music_disc_creator_music_box": "Music Disc",
+  "item.trickytrials.music_disc_creator_music_box.desc": "Lena Raine - Creator (Music Box)",
+  "item.trickytrials.music_disc_precipice": "Music Disc",
+  "item.trickytrials.music_disc_precipice.desc": "Aaron Cherof - Precipice",
 
   "block.trickytrials.chiseled_copper": "Chiseled Copper",
   "block.trickytrials.exposed_chiseled_copper": "Exposed Chiseled Copper",

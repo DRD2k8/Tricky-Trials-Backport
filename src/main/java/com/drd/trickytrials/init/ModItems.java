@@ -3,9 +3,7 @@ package com.drd.trickytrials.init;
 import com.drd.trickytrials.TrickyTrials;
 import com.drd.trickytrials.datagen.tag.ModBannerPatternTags;
 import com.drd.trickytrials.util.ModArmorTrimPatterns;
-import net.minecraft.world.item.BannerPatternItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.SmithingTemplateItem;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -31,6 +29,13 @@ public class ModItems {
             () -> SmithingTemplateItem.createArmorTrimTemplate(ModArmorTrimPatterns.FLOW));
     public static final RegistryObject<Item> BOLT_ARMOR_TRIM_SMITHING_TEMPLATE = ITEMS.register("bolt_armor_trim_smithing_template",
             () -> SmithingTemplateItem.createArmorTrimTemplate(ModArmorTrimPatterns.BOLT));
+
+    public static final RegistryObject<Item> MUSIC_DISC_CREATOR = ITEMS.register("music_disc_creator",
+            () -> new RecordItem(12, ModSounds.MUSIC_DISC_CREATOR, new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 3520));
+    public static final RegistryObject<Item> MUSIC_DISC_CREATOR_MUSIC_BOX = ITEMS.register("music_disc_creator_music_box",
+            () -> new RecordItem(11, ModSounds.MUSIC_DISC_CREATOR_MUSIC_BOX, new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 1460));
+    public static final RegistryObject<Item> MUSIC_DISC_PRECIPICE = ITEMS.register("music_disc_precipice",
+            () -> new RecordItem(13, ModSounds.MUSIC_DISC_PRECIPICE, new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 5980));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

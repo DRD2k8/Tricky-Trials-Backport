@@ -59,5 +59,10 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(ItemTags.TRIM_TEMPLATES)
                 .add(ModItems.FLOW_ARMOR_TRIM_SMITHING_TEMPLATE.get())
                 .add(ModItems.BOLT_ARMOR_TRIM_SMITHING_TEMPLATE.get());
+
+        this.tag(ItemTags.MUSIC_DISCS)
+                .add(ModItems.MUSIC_DISC_CREATOR.get())
+                .add(ModItems.MUSIC_DISC_CREATOR_MUSIC_BOX.get())
+                .add(ModItems.MUSIC_DISC_PRECIPICE.get());
     }
 }
