@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-12T17:12:06.7180482	Item Models: trickytrials
+// 1.20.1	2024-08-17T14:03:31.7367994	Item Models: trickytrials
 1b46c94c14aa6c5764befacf2db3e82867bbb71e assets/trickytrials/models/item/chiseled_tuff.json
 27b3202e1dde1caf3652152df3055952d3514021 assets/trickytrials/models/item/chiseled_tuff_bricks.json
 dcdda826d77b2cba65e2d2f6885d3504ce18f0cf assets/trickytrials/models/item/copper_bulb.json
@@ -8,13 +8,16 @@ bd7d62be51d891624601710a2c9d991e6516a1c4 assets/trickytrials/models/item/exposed
 d62994bad6700f59a1052f3dcd50ca26ac4a9fcf assets/trickytrials/models/item/exposed_copper_door.json
 28bcaf35e35211e9913567e980cf0818e2d426a7 assets/trickytrials/models/item/exposed_copper_trapdoor.json
 d3ce9e472f1217e61ece08e2305a9d9de9abec21 assets/trickytrials/models/item/flow_banner_pattern.json
+a35e0a0b261bc8dcabb1177b99d4c52a3c9058bd assets/trickytrials/models/item/flow_pottery_sherd.json
 42d0c1861021f9e7778a0b97609869037208f65e assets/trickytrials/models/item/guster_banner_pattern.json
+6c91972c95a2839eb8df71c5ced1b6e997105f75 assets/trickytrials/models/item/guster_pottery_sherd.json
 6822b91202e96ab0a468760c977874e8693d8da5 assets/trickytrials/models/item/oxidized_copper_bulb.json
 f032782c5c75e6d984a0a8cc74268be2a827e411 assets/trickytrials/models/item/oxidized_copper_door.json
 2d306c50e69975888400cc09c8721e79eb1645be assets/trickytrials/models/item/oxidized_copper_trapdoor.json
 06195be89aa92c5fc743cf0fbc68818853972378 assets/trickytrials/models/item/polished_tuff_slab.json
 78a6d40a6e4def9e204be254fd7244272d8d2275 assets/trickytrials/models/item/polished_tuff_stairs.json
 a1c4975c68c5a3e30e188b73674f2e4da34139f0 assets/trickytrials/models/item/polished_tuff_wall.json
+7a52165b4373531bbfdde0a1653b06e09b22b406 assets/trickytrials/models/item/scrape_pottery_sherd.json
 2224230459b2959653a2c4f3732be3c902316263 assets/trickytrials/models/item/tuff_brick_slab.json
 2fa62b549267c815141a7ef8d1e22219d9c0b9bd assets/trickytrials/models/item/tuff_brick_stairs.json
 d022e5b5f8c1fb56303749ad8dc4bb9a51494419 assets/trickytrials/models/item/tuff_brick_wall.json

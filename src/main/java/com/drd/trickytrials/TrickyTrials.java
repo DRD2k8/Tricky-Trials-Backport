@@ -2,12 +2,17 @@ package com.drd.trickytrials;
 
 import com.drd.trickytrials.datagen.*;
 import com.drd.trickytrials.init.*;
+import com.drd.trickytrials.util.ModPotterySherds;
+import dev.thomasglasser.sherdsapi.SherdsApi;
+import dev.thomasglasser.sherdsapi.api.data.ForgeSherdDatagenSuite;
+import dev.thomasglasser.sherdsapi.impl.Sherd;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.ItemStack;
@@ -142,6 +147,10 @@ public class TrickyTrials {
             if (tabKey.equals(CreativeModeTabs.INGREDIENTS)) {
                 addAfter(entries, Items.PIGLIN_BANNER_PATTERN, ModItems.FLOW_BANNER_PATTERN.get());
                 addAfter(entries, ModItems.FLOW_BANNER_PATTERN.get(), ModItems.GUSTER_BANNER_PATTERN.get());
+
+                addAfter(entries, Items.DANGER_POTTERY_SHERD, ModItems.FLOW_POTTERY_SHERD.get());
+                addAfter(entries, Items.FRIEND_POTTERY_SHERD, ModItems.GUSTER_POTTERY_SHERD.get());
+                addAfter(entries, Items.PRIZE_POTTERY_SHERD, ModItems.SCRAPE_POTTERY_SHERD.get());
             }
         }
     }
@@ -165,6 +174,17 @@ public class TrickyTrials {
             ModBlockTagGenerator blockTagGenerator = generator.addProvider(event.includeServer(),
                     new ModBlockTagGenerator(packOutput, lookupProvider, existingFileHelper));
             generator.addProvider(event.includeServer(), new ModItemTagGenerator(packOutput, lookupProvider, blockTagGenerator.contentsGetter(), existingFileHelper));
+
+            (new ForgeSherdDatagenSuite(event, TrickyTrials.MOD_ID))
+                    .makeSherdSuite(ModPotterySherds.FLOW, new Sherd(() -> {
+                        return ModItems.FLOW_POTTERY_SHERD.get();
+                    }, new ResourceLocation(TrickyTrials.MOD_ID, "flow_pottery_pattern")))
+                    .makeSherdSuite(ModPotterySherds.GUSTER, new Sherd(() -> {
+                        return ModItems.GUSTER_POTTERY_SHERD.get();
+                    }, new ResourceLocation(TrickyTrials.MOD_ID, "guster_pottery_pattern")))
+                    .makeSherdSuite(ModPotterySherds.SCRAPE, new Sherd(() -> {
+                        return ModItems.SCRAPE_POTTERY_SHERD.get();
+                    }, new ResourceLocation(TrickyTrials.MOD_ID, "scrape_pottery_pattern")));
         }
     }
 }

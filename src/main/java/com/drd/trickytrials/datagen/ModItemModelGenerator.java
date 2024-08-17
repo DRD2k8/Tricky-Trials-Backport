@@ -58,6 +58,9 @@ public class ModItemModelGenerator extends ItemModelProvider {
         simpleBlockItem(ModBlocks.CHISELED_TUFF_BRICKS);
         simpleItem(ModItems.FLOW_BANNER_PATTERN);
         simpleItem(ModItems.GUSTER_BANNER_PATTERN);
+        simpleItem(ModItems.FLOW_POTTERY_SHERD);
+        simpleItem(ModItems.GUSTER_POTTERY_SHERD);
+        simpleItem(ModItems.SCRAPE_POTTERY_SHERD);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
