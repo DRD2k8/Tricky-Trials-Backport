@@ -61,6 +61,8 @@ public class ModItemModelGenerator extends ItemModelProvider {
         simpleItem(ModItems.FLOW_POTTERY_SHERD);
         simpleItem(ModItems.GUSTER_POTTERY_SHERD);
         simpleItem(ModItems.SCRAPE_POTTERY_SHERD);
+        simpleItem(ModItems.FLOW_ARMOR_TRIM_SMITHING_TEMPLATE);
+        simpleItem(ModItems.BOLT_ARMOR_TRIM_SMITHING_TEMPLATE);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

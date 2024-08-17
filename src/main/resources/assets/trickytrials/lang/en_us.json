@@ -6,6 +6,8 @@
   "item.trickytrials.flow_pottery_sherd": "Flow Pottery Sherd",
   "item.trickytrials.guster_pottery_sherd": "Guster Pottery Sherd",
   "item.trickytrials.scrape_pottery_sherd": "Scrape Pottery Sherd",
+  "item.trickytrials.flow_armor_trim_smithing_template": "Smithing Template",
+  "item.trickytrials.bolt_armor_trim_smithing_template": "Smithing Template",
 
   "block.trickytrials.chiseled_copper": "Chiseled Copper",
   "block.trickytrials.exposed_chiseled_copper": "Exposed Chiseled Copper",
@@ -105,5 +107,8 @@
   "subtitles.block.trickytrials.copper_trapdoor.open": "Trapdoor opens",
   "subtitles.block.trickytrials.copper_trapdoor.close": "Trapdoor closes",
   "subtitles.block.trickytrials.copper_bulb.turn_on": "Copper Bulb turns on",
-  "subtitles.block.trickytrials.copper_bulb.turn_off": "Copper Bulb turns off"
+  "subtitles.block.trickytrials.copper_bulb.turn_off": "Copper Bulb turns off",
+
+  "trim_pattern.trickytrials.flow": "Flow Armor Trim",
+  "trim_pattern.trickytrials.bolt": "Bolt Armor Trim"
 }

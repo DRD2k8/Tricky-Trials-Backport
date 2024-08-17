@@ -2,6 +2,7 @@ package com.drd.trickytrials.datagen;
 
 import com.drd.trickytrials.TrickyTrials;
 import com.drd.trickytrials.init.ModBlocks;
+import com.drd.trickytrials.init.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
@@ -54,5 +55,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.TUFF_WALL.get().asItem())
                 .add(ModBlocks.POLISHED_TUFF_WALL.get().asItem())
                 .add(ModBlocks.TUFF_BRICK_WALL.get().asItem());
+
+        this.tag(ItemTags.TRIM_TEMPLATES)
+                .add(ModItems.FLOW_ARMOR_TRIM_SMITHING_TEMPLATE.get())
+                .add(ModItems.BOLT_ARMOR_TRIM_SMITHING_TEMPLATE.get());
     }
 }

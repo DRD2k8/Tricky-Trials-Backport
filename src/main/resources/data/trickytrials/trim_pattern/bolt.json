@@ -1,0 +1,7 @@
+{
+  "asset_id": "trickytrials:bolt",
+  "description": {
+    "translate": "trim_pattern.trickytrials.bolt"
+  },
+  "template_item": "trickytrials:bolt_armor_trim_smithing_template"
+}

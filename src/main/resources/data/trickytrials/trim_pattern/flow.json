@@ -1,0 +1,7 @@
+{
+  "asset_id": "trickytrials:flow",
+  "description": {
+    "translate": "trim_pattern.trickytrials.flow"
+  },
+  "template_item": "trickytrials:flow_armor_trim_smithing_template"
+}

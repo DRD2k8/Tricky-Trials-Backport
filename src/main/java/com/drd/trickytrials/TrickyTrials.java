@@ -151,6 +151,9 @@ public class TrickyTrials {
                 addAfter(entries, Items.DANGER_POTTERY_SHERD, ModItems.FLOW_POTTERY_SHERD.get());
                 addAfter(entries, Items.FRIEND_POTTERY_SHERD, ModItems.GUSTER_POTTERY_SHERD.get());
                 addAfter(entries, Items.PRIZE_POTTERY_SHERD, ModItems.SCRAPE_POTTERY_SHERD.get());
+
+                addAfter(entries, Items.SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE, ModItems.FLOW_ARMOR_TRIM_SMITHING_TEMPLATE.get());
+                addAfter(entries, ModItems.FLOW_ARMOR_TRIM_SMITHING_TEMPLATE.get(), ModItems.BOLT_ARMOR_TRIM_SMITHING_TEMPLATE.get());
             }
         }
     }
